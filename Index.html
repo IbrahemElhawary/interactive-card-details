@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elhawary</title>
+    <link rel="stylesheet" href="css/nomalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="css/Style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;600;800&family=Hubballi&family=Karma:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="right" id="right">
+        <form action="" id="form" class="">
+          <div class="card-info">
+            <label for="">cardholdername</label>
+            <input type="text" placeholder="e.g. Jane Appleseed" required />
+            <label for="">card number</label>
+            <input
+              type="text"
+              placeholder="e.g. 1235 4568 5468 0000"
+              pattern="[0-9]+"
+              minlength="17"
+              required
+            />
+          </div>
+          <div class="card-my">
+            <div class="lab">
+              <label for="">exp. bata (mm/yy)</label>
+              <label for="cvc">cvc</label>
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="MM"
+                size="5"
+                maxlength="2"
+                pattern="[0-9]+"
+                minlength="2"
+                required
+              />
+              <input
+                type="text"
+                placeholder="YY"
+                size="5"
+                maxlength="2"
+                pattern="[0-9]+"
+                minlength="2"
+                required
+              />
+              <input
+                type="text"
+                placeholder="e.g. 123"
+                pattern="[0-9]+"
+                minlength="4"
+                maxlength="4  "
+                required
+              />
+            </div>
+          </div>
+          <button type="submit">Confirm</button>
+          <!-- <input type="submit" id="button" value="Confirm" /> -->
+        </form>
+      </div>
+      <img src="images/bg-main-desktop.png" alt="" id="desktop" />
+    </div>
+    <div class="card-front">
+      <img src="images/bg-card-front.png" alt="card-front" />
+      <img src="images/card-logo.svg" alt="card-logo" />
+      <div class="card-text">
+        <p>5664 5468 4651 18974</p>
+        <div>
+          <p>FELICIA LEIRE</p>
+          <p>09/00</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-back">
+      <img src="images/bg-card-back.png" alt="" />
+      <div style="position: absolute; top: 45%; color: #fff; left: 80%">
+        ooo
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
